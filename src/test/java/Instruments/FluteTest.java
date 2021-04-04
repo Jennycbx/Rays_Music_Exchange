@@ -5,48 +5,48 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class PianoTest {
+public class FluteTest {
 
-    Piano piano;
+    Flute flute;
 
     @Before
     public void before() {
-        piano = new Piano(15, 10, "Wood");
+        flute = new Flute(18, 14, "Metal");
     }
 
 
     @Test
     public void canGetSellPrice() {
-        assertEquals(15, piano.getSellPrice());
+        assertEquals(18, flute.getSellPrice());
     }
 
     @Test
     public void canGetBuyPrice() {
-        assertEquals(10, piano.getBuyPrice());
+        assertEquals(14, flute.getBuyPrice());
     }
 
     @Test
     public void canGetType() {
-        assertEquals("String", piano.getType());
+        assertEquals("Woodwind", flute.getType());
     }
 
     @Test
     public void canGetMaterial() {
-        assertEquals("Wood", piano.getMaterial());
+        assertEquals("Metal", flute.getMaterial());
     }
 
     @Test
     public void canGetNumberOfKeys() {
-        assertEquals(88, piano.getNumberOfKeys());
+        assertEquals(16, flute.getNumberOfKeys());
     }
 
     @Test
     public void canPlay() {
-        assertEquals("Tinkle", piano.play());
+        assertEquals("Whistle", flute.play());
     }
 
     @Test
     public void canCalculateMarkup() {
-        assertEquals(5, piano.calculateMarkup());
+        assertEquals(4, flute.calculateMarkup());
     }
 }
