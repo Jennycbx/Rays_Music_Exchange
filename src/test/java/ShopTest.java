@@ -9,26 +9,29 @@ import static org.junit.Assert.*;
 public class ShopTest {
 
     Shop shop;
-    private ISell DrumSticks;
-    private ISell SheetMusic;
+    ISell DrumSticks;
+    ISell SheetMusic;
 
     @Before
     public void before() {
         shop = new Shop();
     }
 
-//    @Test
-//    public void canGetStock() {
-//        assertEquals(null, shop.getStock());
-//    }
+    @Test
+    public void canGetAmountOfStock() {
+        assertEquals(0, shop.getAmountOfStock());
+    }
 
     @Test
     public void canAddItemToStock() {
         shop.addItemToStock(DrumSticks);
-        assertEquals(DrumSticks, shop.getStock());
+        assertEquals(1, shop.getAmountOfStock());
     }
 
-//    @Test
-//    public void canRemoveItemFromStock() {
-//    }
+    @Test
+    public void canRemoveItemFromStock() {
+        shop.addItemToStock(DrumSticks);
+        shop.removeItemFromStock(DrumSticks);
+        assertEquals(0, shop.getAmountOfStock());
+    }
 }

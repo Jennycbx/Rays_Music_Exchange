@@ -3,7 +3,7 @@ package Instruments;
 import Behaviours.IPlay;
 import Behaviours.ISell;
 
-public class Instrument implements IPlay, ISell {
+public abstract class Instrument implements IPlay, ISell {
 
     public int sellPrice;
     public int buyPrice;

@@ -7,7 +7,7 @@ public class DrumSticks extends Items {
     public String type;
 
 
-    public DrumSticks(int sellPrice, int buyPrice, String type) {
+    public DrumSticks(int sellPrice, int buyPrice) {
         super(sellPrice, buyPrice);
         this.type = "Drumsticks";
     }

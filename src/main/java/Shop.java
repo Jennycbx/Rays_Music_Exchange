@@ -10,8 +10,8 @@ public class Shop {
         stock = new ArrayList<>();
     }
 
-    public ArrayList<ISell> getStock() {
-        return stock;
+    public int getAmountOfStock() {
+        return stock.size();
     }
 
     public void addItemToStock(ISell element) {

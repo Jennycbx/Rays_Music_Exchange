@@ -7,7 +7,7 @@ public class SheetMusic extends Items {
     public String type;
 
 
-    public SheetMusic(int sellPrice, int buyPrice, String type) {
+    public SheetMusic(int sellPrice, int buyPrice) {
         super(sellPrice, buyPrice);
         this.type = "Sheet Music";
     }
