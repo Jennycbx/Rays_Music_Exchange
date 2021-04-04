@@ -1,15 +1,15 @@
 package Items;
 
-public class DrumSticks extends Items {
+public class SheetMusic extends Items {
 
     public int sellPrice;
     public int buyPrice;
     public String type;
 
 
-    public DrumSticks(int sellPrice, int buyPrice, String type) {
+    public SheetMusic(int sellPrice, int buyPrice, String type) {
         super(sellPrice, buyPrice);
-        this.type = "Drumsticks";
+        this.type = "Sheet Music";
     }
 
     public String getType() {
