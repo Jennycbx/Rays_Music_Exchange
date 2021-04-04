@@ -8,10 +8,22 @@ public class Flute extends Instrument {
     public String type;
     public int numberOfKeys;
 
-    public Flute(int sellPrice, int buyPrice, String material, int numberOfKeys) {
+    public Flute(int sellPrice, int buyPrice, String material) {
         super(sellPrice, buyPrice, material);
         this.type = "Woodwind";
-        this.numberOfKeys = numberOfKeys;
+        this.numberOfKeys = 16;
 
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public int getNumberOfKeys() {
+        return numberOfKeys;
+    }
+
+    public String play() {
+        return "Whistle";
     }
 }

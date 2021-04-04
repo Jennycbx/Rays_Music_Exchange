@@ -8,9 +8,21 @@ public class Guitar extends Instrument {
     public String type;
     public int numberOfStrings;
 
-    public Guitar(int sellPrice, int buyPrice, String material, int numberOfStrings) {
+    public Guitar(int sellPrice, int buyPrice, String material) {
         super(sellPrice, buyPrice, material);
         this.type = "String";
-        this.numberOfStrings = numberOfStrings;
+        this.numberOfStrings = 6;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public int getNumberOfStrings() {
+        return numberOfStrings;
+    }
+
+    public String play() {
+        return "Strum";
     }
 }

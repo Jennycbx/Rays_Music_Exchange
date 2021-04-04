@@ -8,9 +8,21 @@ public class Piano extends Instrument {
     public String type;
     public int numberOfKeys;
 
-    public Piano(int sellPrice, int buyPrice, String material, int numberOfKeys) {
+    public Piano(int sellPrice, int buyPrice, String material) {
         super(sellPrice, buyPrice, material);
         this.type = "String";
-        this.numberOfKeys = numberOfKeys;
+        this.numberOfKeys = 88;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public int getNumberOfKeys() {
+        return numberOfKeys;
+    }
+
+    public String play() {
+        return "Tinkle";
     }
 }
